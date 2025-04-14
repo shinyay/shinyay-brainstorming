@@ -69,3 +69,65 @@ Model Context Protocol (MCP) is a standardized conceptual framework aimed at pro
 While GitHub Copilot Extensions and MCP share high-level similarities in enabling AI-driven productivity enhancements, their differences lie in scope, context management, interoperability, and standardization approach. Copilot Extensions focus on developer productivity and coding assistance, while MCP is designed as a general-purpose standard for structured context and metadata interactions across generative AI ecosystems.
 
 Understanding your specific use-case scenario and objectives will guide you toward choosing between these two technologies or leveraging both, potentially complementing each other in comprehensive AI-assisted workflows.
+
+---
+
+Certainly! Here are Mermaid diagrams illustrating simplified conceptual architectures for GitHub Copilot Extensions and Model Context Protocol (MCP).
+
+### ① GitHub Copilot Extensions Architecture
+````markdown name=github-copilot-extensions-architecture.md
+```mermaid
+graph TD
+    IDE[Developer's IDE or Editor]
+    ExtensionAPI[Copilot Extension API]
+    Copilot[GitHub Copilot Service]
+    AIModel[AI Model]
+
+    IDE -->|User Interaction| ExtensionAPI
+    ExtensionAPI -->|Request Suggestions| Copilot
+    Copilot -->|Inference Request| AIModel
+    AIModel -->|Generated Code Snippet| Copilot
+    Copilot -->|Code Suggestions| ExtensionAPI
+    ExtensionAPI -->|Display Suggestions| IDE
+```
+````
+
+### Explanation:
+- The developer interacts directly with their IDE, triggering the Copilot extension.
+- The extension communicates with the GitHub Copilot service through an extension API.
+- GitHub Copilot invokes AI models behind-the-scenes to generate code suggestions.
+- Suggestions flow back to the IDE via the extension API, providing inline recommendations.
+
+---
+
+### ② Model Context Protocol (MCP) Architecture
+````markdown name=mcp-architecture.md
+```mermaid
+graph TD
+    Client[Client Application] 
+    MCP[Model Context Protocol Layer] 
+    Provider[Generative AI Model Provider]
+    AIModel[Generative AI Model]
+
+    Client -->|Contextual Request with Metadata| MCP
+    MCP -->|Standardized Context| Provider
+    Provider -->|Inference Request| AIModel
+    AIModel -->|Contextually Generated Response| Provider
+    Provider -->|Standardized Response| MCP
+    MCP -->|Structured Response| Client
+```
+````
+
+### Explanation:
+- A client application sends structured contextual requests (including metadata) via the MCP layer.
+- MCP standardizes the context and forwards the request to the generative AI provider.
+- The provider invokes the appropriate AI model.
+- AI-generated responses are passed back through the provider, standardized again by MCP, and finally delivered to the client.
+
+---
+
+### 📌 Key Differences Clarified by the Diagrams:
+- **Copilot Extensions** are tightly integrated into IDE workflows, focusing primarily on developer tooling and interactions.
+- **MCP** is a generalized protocol layer, designed to standardize interaction and context-passing for various generative AI applications (not just coding).
+
+These diagrams highlight the architectural similarity (both mediate between clients and generative AI models) while also making their differences clear: Copilot Extensions focus on a specialized, IDE-integrated workflow, while MCP provides a standardized protocol applicable across multiple domains.
