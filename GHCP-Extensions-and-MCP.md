@@ -75,7 +75,7 @@ Understanding your specific use-case scenario and objectives will guide you towa
 Certainly! Here are Mermaid diagrams illustrating simplified conceptual architectures for GitHub Copilot Extensions and Model Context Protocol (MCP).
 
 ### ① GitHub Copilot Extensions Architecture
-````markdown name=github-copilot-extensions-architecture.md
+
 ```mermaid
 graph TD
     IDE[Developer's IDE or Editor]
@@ -90,7 +90,7 @@ graph TD
     Copilot -->|Code Suggestions| ExtensionAPI
     ExtensionAPI -->|Display Suggestions| IDE
 ```
-````
+
 
 ### Explanation:
 - The developer interacts directly with their IDE, triggering the Copilot extension.
@@ -101,7 +101,7 @@ graph TD
 ---
 
 ### ② Model Context Protocol (MCP) Architecture
-````markdown name=mcp-architecture.md
+
 ```mermaid
 graph TD
     Client[Client Application] 
@@ -116,7 +116,7 @@ graph TD
     Provider -->|Standardized Response| MCP
     MCP -->|Structured Response| Client
 ```
-````
+
 
 ### Explanation:
 - A client application sends structured contextual requests (including metadata) via the MCP layer.
