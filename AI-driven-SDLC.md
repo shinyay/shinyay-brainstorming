@@ -7,3 +7,4 @@
 
 # | Paper / Report | Key finding you can quote | Why it supports an AI-driven SDLC | Year
 1 | AutoDev: Automated AI-Driven Development arXiv | Presents a framework where autonomous agents plan tasks, edit files, run builds, tests, and Git operations end-to-end. | Proof of a working multi-agent pipeline prototype. | 2024
+2 | Agentless: Demystifying LLM-Based SE Agents arXiv | A “controller-free” agent matched SWE-Bench-Lite’s top score while being simpler and faster. | Shows that self-contained agents can already fix real GitHub issues. | 2024
