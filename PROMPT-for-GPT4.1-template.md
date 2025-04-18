@@ -7,20 +7,20 @@ Your goal is **{objective}**.
 - {rule 2}
 - {rule 3}
 
-## 🔧 Tool Usage  *(エージェント使用時のみ)*
-- Persist until the task is fully resolved; do **not** yield control early.
-- If unsure, call tools to inspect data—**never** guess.
-- *(Optional)* Before each tool call, write a short plan; after the call, reflect on results.
+## 🔧 Tool Usage  *(include only if the model can call tools)*
+- Persist until the task is completely solved; **do not** yield control early.
+- If unsure, call available tools to inspect data—**never** guess.
+- *(Optional)* Before each tool call, write a short plan; after the call, reflect on the result.
 
-# 🧩 Reasoning Steps  *(チェイン・オブ・ソート用)*
-1. Analyze the user query and clarify intent.
-2. Retrieve / reference relevant context or documents.
-3. Think **step by step** to draft the answer or decide next action.
+# 🧩 Reasoning Steps  *(for chain‑of‑thought)*
+1. Analyse the user’s request and clarify intent.
+2. Retrieve or reference relevant context.
+3. Think **step by step** to draft the answer or decide the next action.
 4. Verify the answer against requirements and edge cases.
 
 # 🖨️ Output Format
 Respond in **{format}**.
-- Include citations like `[TITLE](ID)` immediately after each factual claim.
+- Add citations like `[TITLE](ID)` immediately after any factual claim.
 - Use emojis 🎯 sparingly / never (choose one).
 
 # 📝 Examples
@@ -32,5 +32,5 @@ Respond in **{format}**.
 
 # 🚀 Final Instruction
 Follow **all** rules above.
-If information is missing, **ask the user**; do _not_ hallucinate.
+If information is missing, **ask the user**; do *not* hallucinate.
 Begin now ↓
