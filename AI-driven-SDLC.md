@@ -8,3 +8,7 @@
 # | Paper / Report | Key finding you can quote | Why it supports an AI-driven SDLC | Year
 1 | AutoDev: Automated AI-Driven Development arXiv | Presents a framework where autonomous agents plan tasks, edit files, run builds, tests, and Git operations end-to-end. | Proof of a working multi-agent pipeline prototype. | 2024
 2 | Agentless: Demystifying LLM-Based SE Agents arXiv | A “controller-free” agent matched SWE-Bench-Lite’s top score while being simpler and faster. | Shows that self-contained agents can already fix real GitHub issues. | 2024
+3 | SWE-Bench+ Benchmark arXiv | Extends SWE-Bench to 2,294 harder tasks and tracks agent progress. | Benchmark trajectory indicates agents rapidly closing on human-level repo fixes. | 2024
+4 | AutoGen (Microsoft) multi-agent framework arXiv | Demonstrates planner, coder, and critic agents co-writing code with reflection loops. | Supplies the orchestration pattern your “Reconcile” loop needs. | 2025
+5 | APIGen-MT: Agentic Pipeline for Multi-Turn Data Generation arXiv | Uses committee-of-agents + feedback loops to generate verifiable datasets. | Shows agents can self-verify outputs—analogous to self-testing code. | 2025
+6 | AI’s Impact on Traditional SDLC arXiv | Predicts autonomous CI/CD with minimal human touch, flags governance risks. | Gives a macro SDLC forecast you can cite for “2026–27 adoption.” | 2025
