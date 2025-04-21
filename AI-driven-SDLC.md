@@ -12,3 +12,6 @@
 4 | AutoGen (Microsoft) multi-agent framework arXiv | Demonstrates planner, coder, and critic agents co-writing code with reflection loops. | Supplies the orchestration pattern your “Reconcile” loop needs. | 2025
 5 | APIGen-MT: Agentic Pipeline for Multi-Turn Data Generation arXiv | Uses committee-of-agents + feedback loops to generate verifiable datasets. | Shows agents can self-verify outputs—analogous to self-testing code. | 2025
 6 | AI’s Impact on Traditional SDLC arXiv | Predicts autonomous CI/CD with minimal human touch, flags governance risks. | Gives a macro SDLC forecast you can cite for “2026–27 adoption.” | 2025
+7 | Gartner: “AI Agents Transforming Software Engineering” Gartner | Calls agentic AI “autopilot for dev & testing”; early prod use in < 24 months. | Analyst endorsement—good for exec audiences. | 2025
+8 | PwC Agent OS launch (Business Insider) Business Insider | Platform stitches multiple AI agents into a coordinated “armada.” | Shows enterprises investing in real multi-agent orchestration. | 2025
+9 | Wired feature: “The AI-Powered Future of Coding Is Near” WIRED | Highlights SWE-agent debugging whole repos, Amazon Q translating codebases. | Mainstream press validation of autonomous coding trend. | 2024
